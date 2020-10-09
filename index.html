@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
-    <title>Brainy</title>
+    <title>Brainy0</title>
 
 </head>
 <body>
@@ -83,6 +83,9 @@
 
      window.setInterval(blink, 100);
 
+     navigator.geolocation.getCurrentPosition(function(position) {
+     alert(position.coords.latitude, position.coords.longitude);
+});
     </script>
 
 </html>
