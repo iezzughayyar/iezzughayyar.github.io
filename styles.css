@@ -1,0 +1,19 @@
+body{
+    background-color:#eee
+}
+
+.logo{
+    height:50px;
+    cursor:pointer;
+}
+
+header {
+    display:flex;
+}
+
+nav li{
+    display: inline-block;
+}
+a{
+    font-decoration:none;
+}
