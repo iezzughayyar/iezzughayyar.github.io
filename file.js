@@ -4,7 +4,7 @@ function greet()
         document.querySelector("h1").innerHTML = "hello you stupid " + name;
         }
         //
-        function counter()
+function counter()
         {
         document.querySelector("h2").innerHTML ++;
         }
@@ -35,7 +35,7 @@ function greet()
             document.querySelector("p").style.fontSize= this.value;
         }
 
-        function blink(){
+function blink(){
             let p = document.querySelector("p");
             if (p.style.visibility==="hidden"){
                 p.style.visibility="visible";
@@ -46,8 +46,8 @@ function greet()
 
         }
 
-      window.setInterval(blink, 100);
+window.setInterval(blink, 100);
 
-     navigator.geolocation.getCurrentPosition(function(position) {
-  window.alert(position.coords.latitude + " " + position.coords.longitude);
+navigator.geolocation.getCurrentPosition(function(position) {
+window.alert(position.coords.latitude + " " + position.coords.longitude);
 });
