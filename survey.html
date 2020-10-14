@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        #survey-form{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            background-color:tan;
+            color: white;
+            padding: 20px;
+            
+        }
+        .formie{
+            width: 300px;
+        }
+        #submit{
+            width: 60px;
+        }
+        textarea{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="#" id="survey-form">
+        <label for="servey-form" id="name-label">Type your name</label>
+        <input class="formie" type="text" id="servey-form" placeholder="Max Li" required>
+        
+        <label for="email" id="email-label">Type your E-Mail</label>
+        <input class="formie" type="email" id="email" placeholder="email@example.com" required>
+        
+        <label for="number" id="number-label">How old are you? (optional)</label>
+        <input class="formie" type="number" id="number">
+
+        <label for="dropsown-label">Which option best describes your current role?</label>
+        <select  class="formie" name="dropdown" id="dropdown" >
+            <option value="nothing" selected disabled>What do you do</option>
+            <option value="1">Consultant</option>
+            <option value="2">Coworker</option>
+            <option value="3">manager</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="">
+            <input type="checkbox" id="Definitely" checked> Definitely
+        </label>        
+        
+        <label for="">
+            <input type="checkbox" id="Maybe"> Maybe
+        </label>        
+        
+        <label for="">
+            <input type="checkbox" id="nah"> nah
+        </label>
+
+        <label for="textarea">any comments</label>
+        <textarea name="comments" id="" cols="30" rows="10" placeholder="enter your comment here"></textarea>
+        <br>
+        <button id="submit" type="submit">send</button>
+    </form>
+</body>
+</html>
