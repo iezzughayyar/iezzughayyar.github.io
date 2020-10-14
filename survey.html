@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
     <style>
+        #title{
+            font-family: 'Lobster', cursive;
+            letter-spacing: 1.5px;
+        }
         body{
             background-color:yellowgreen;
         }
@@ -17,6 +22,7 @@
             padding: 20px;
             margin: 0 auto;
             overflow: scroll;
+            box-shadow: inset 0px 0px 10px teal;
             
         }
         .formie{
@@ -73,7 +79,6 @@
         <label for="other">Other</label>
         </div>
         <label for="textarea">any comments</label>
-        <textarea name="comments" id="" cols="30" rows="10" placeholder="enter your comment here"></textarea>
         <textarea name="comments" id="" cols="30" rows="10" placeholder="enter your comment here"></textarea>
         <br>
         <button id="submit" type="submit">send</button>
